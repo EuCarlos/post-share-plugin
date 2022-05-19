@@ -198,6 +198,13 @@ styles.innerHTML = `
 #plugin-container-wrapper[data-theme="light-cream"] #content-share-plugin #share-icon a { background: #ccb7ae; color: #565264; }
 #plugin-container-wrapper[data-theme="light-cream"] #content-share-plugin svg path { fill: #565264; }
 #plugin-container-wrapper[data-theme="light-cream"] #content-share-plugin a:hover > svg path { fill: #fff; }
+
+/* Dark mode - dracula */
+#plugin-container-wrapper[data-theme="dracula"] #content-share-plugin { background: #282a36; border: solid 1px #d468a8; }
+#plugin-container-wrapper[data-theme="dracula"] #content-share-plugin h1 { color: #f8f8f2; }
+#plugin-container-wrapper[data-theme="dracula"] #content-share-plugin #share-icon a { background: #44475a; color: #fff; }
+#plugin-container-wrapper[data-theme="dracula"] #content-share-plugin a svg path { fill: #d468a8; }
+#plugin-container-wrapper[data-theme="dracula"] #content-share-plugin a:hover > svg path { fill: #fff; }
 `
 document.head.appendChild(styles)
 document.body.appendChild(share_plugin)
