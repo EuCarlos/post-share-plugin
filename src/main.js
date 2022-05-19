@@ -2,7 +2,8 @@ const
     theme = document.currentScript.getAttribute('theme') || 'light',
     lang = document.currentScript.getAttribute('lang') || 'pt_br',
     host = window.location.href,
-    share_plugin = document.createElement("div")
+    share_plugin = document.createElement('div'),
+    styles = document.createElement('style')
 
 const locales = [
     {
@@ -122,6 +123,62 @@ share_plugin.innerHTML = `
     </div>
 `
 
+styles.innerHTML = `
+/* Configurações padrão */
+
+#plugin-container-wrapper {
+    position: fixed;
+    bottom: 1rem;
+    right: 1.5rem;
+}
+
+#plugin-container-wrapper #content-share-plugin {
+    background: #f2eeee;
+    border: solid 2px #c4acac;
+    border-radius: 7px;
+    
+    width: 20rem;
+    padding: 1rem;
+}
+  
+#plugin-container-wrapper #content-share-plugin h1 {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5b4a4a;
+}
+  
+#plugin-container-wrapper #content-share-plugin #share-icon a {
+  display: inline-block;
+  background: #d9d4d4;
+  padding: .5rem .6rem;
+  border-radius: 40px;
+  color: #5b4a4a;
+  
+  transition: all .7s;
+}
+
+#plugin-container-wrapper #content-share-plugin #share-icon svg { width: 15px; height: 15px; }
+/* #plugin-container-wrapper #content-share-plugin #share-icon a svg path { fill: #5b4a4a; } */
+
+#plugin-container-wrapper #content-share-plugin #share-icon a:hover > svg path { fill: #fff; }
+#plugin-container-wrapper #content-share-plugin #share-icon a#whatsapp:hover { background: #00e676; }
+
+#plugin-container-wrapper #content-share-plugin #share-icon a#facebook:hover { background: #1877f2; }
+  
+#plugin-container-wrapper #content-share-plugin #share-icon a#instagram:hover { background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+  
+#plugin-container-wrapper #content-share-plugin #share-icon a#twitter:hover { background: #1d9bf0; }
+
+#plugin-container-wrapper #content-share-plugin #share-icon a#linkedin:hover { background: #0a66c2; }
+
+#plugin-container-wrapper #content-share-plugin #share-icon a#email:hover { background: #ee6c4d; }
+`
+document.head.appendChild(styles)
 document.body.appendChild(share_plugin)
 share_plugin.setAttribute('id', 'plugin-container-wrapper')
 share_plugin.setAttribute('data-theme', theme)
