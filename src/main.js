@@ -205,6 +205,13 @@ styles.innerHTML = `
 #plugin-container-wrapper[data-theme="dracula"] #content-share-plugin #share-icon a { background: #44475a; color: #fff; }
 #plugin-container-wrapper[data-theme="dracula"] #content-share-plugin a svg path { fill: #d468a8; }
 #plugin-container-wrapper[data-theme="dracula"] #content-share-plugin a:hover > svg path { fill: #fff; }
+
+/* Light mode - sakura */
+#plugin-container-wrapper[data-theme="light-sakura"] #content-share-plugin { background: #FFC8DD; border: solid 1px #A2D2FF; }
+#plugin-container-wrapper[data-theme="light-sakura"] #content-share-plugin h1 { color: #9b7cad; }
+#plugin-container-wrapper[data-theme="light-sakura"] #content-share-plugin #share-icon a { background: #A2D2FF; color: #fff; }
+#plugin-container-wrapper[data-theme="light-sakura"] #content-share-plugin svg path { fill: #fff; }
+#plugin-container-wrapper[data-theme="light-sakura"] #content-share-plugin a:hover > svg path { fill: #fff; }
 `
 document.head.appendChild(styles)
 document.body.appendChild(share_plugin)
