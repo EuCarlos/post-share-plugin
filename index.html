@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>POST SHARE PLUGIN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./src/styles/global.css" rel="stylesheet">
+        <title>POST SHARE PLUGIN</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./src/assets/logo.svg" alt="Logo"> POST SHARE PLUGIN
+            </div>
+            <div>
+                <a href="https://github.com/eucarlos/post-share-plugin" title="Contribua com o projeto">
+                    <img src="./src/assets/github.svg" alt="github">
+                </a>
+            </div>
+        </header>
+
+        <section>
+            <div class="content-wrapper-form">
+                <form>
+                    <label for="theme-form"><strong>Escolha o tema:</strong></label>
+                    <select class="select-form" name="theme-form" id="theme-form">
+                        <optgroup label="Padrão">
+                            <option value="light" selected>Claro</option>
+                            <option value="dark">Escuro</option>
+                        </optgroup>
+                        <optgroup label="Claro">
+                            <option value="light-cream">Creme</option>
+                            <option value="light-sakura">Sakura</option>
+                        </optgroup>
+                        <optgroup label="Escuro">
+                            <option value="dracula">Dracula</option>
+                        </optgroup>
+                    </select>
+                    <label for="lang-form"><strong>Escolha o idioma:</strong></label>
+                    <select class="select-form" name="lang-form" id="lang-form">
+                        <option value="cn">🇨🇳 Chines</option>
+                        <option value="de">🇩🇪 Alemão</option>
+                        <option value="en">🇺🇸 Inglês</option>
+                        <option value="es">🇲🇽 Espanhol</option>
+                        <option value="fr">🇫🇷 Francês</option>
+                        <option value="it">🇮🇹 Italiano</option>
+                        <option value="ja">🇯🇵 Japonês</option>
+                        <option value="pt_br" selected>🇧🇷 Português Brasileiro</option>
+                        <option value="ru">🇷🇺 Russo</option>
+                    </select>
+                </form>
+                <div class="result-wrapper-form">
+                    <p>o código abaixo e cole dentro do HTML do seu site para implantar o <i>plugin</i> automaticamente</p>
+                    <div class="textarea-result-wrapper">
+                        <textarea name="result-form" id="result-form"></textarea>
+                        <div class="button-form">
+                            <button>Copiar para área de Trabalho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <span>
+                Desenvolvido com
+                <strong class="red v-middle">♥</strong>
+                por <strong class="red">Carlos Alves</strong>
+            </span>
+        </footer>
+        
+    <script
+        src="./src/post-share-plugin.js" 
+        theme="light"
+        lang="pt_br"
+    ></script>
+    <script src="./src/main.js"></script>
+    </body>
+</html>

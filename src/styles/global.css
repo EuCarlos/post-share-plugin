@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    background: #dad7cd;
+    color: #2b2d42;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #344e41;
+    color: #dad7cd;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img { margin-right: .7rem; }
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+section .content-wrapper-form { width: 30rem; }
+
+section .content-wrapper-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+section .content-wrapper-form form label { margin-top: .7rem; }
+
+section .content-wrapper-form form select {
+    border: solid 2px #344e41;
+    padding: .5rem;
+}
+
+section .result-wrapper-form p { text-align: center;}
+section .result-wrapper-form .textarea-result-wrapper {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 1em;
+    border: solid 2px #344e41;
+    border-radius: 0 15px 15px 15px;
+}
+
+section .result-wrapper-form .textarea-result-wrapper textarea {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+section .result-wrapper-form .textarea-result-wrapper .button-form {
+    display: flex;
+    justify-content: end;
+}
+
+section .result-wrapper-form .textarea-result-wrapper .button-form button {
+    margin-top: .5rem;
+    color: #fff;
+    background: #344e41;
+    border: solid 3px #344e41;
+    padding: .5rem;
+    cursor: pointer;
+    transition: .7s background;
+}
+
+section .result-wrapper-form .textarea-result-wrapper .button-form button:hover { background: #4b725e; }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: flex-start;
+
+    background: #344e41;
+    color: #dad7cd;
+
+    width: 100%;
+    padding: 2rem;
+}
+
+.footer span {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.red {
+    color: #ffb703;
+}
+
+.v-middle {
+    vertical-align: baseline;
+    vertical-align: -webkit-baseline-middle;
+}
