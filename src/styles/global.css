@@ -53,10 +53,12 @@ section .result-wrapper-form .textarea-result-wrapper {
     border-radius: 0 15px 15px 15px;
 }
 
-section .result-wrapper-form .textarea-result-wrapper textarea {
+section .result-wrapper-form .textarea-result-wrapper #result-form {
     border: none;
     outline: none;
     resize: none;
+    font-size: .7rem;
+    font-family: code;
 }
 
 section .result-wrapper-form .textarea-result-wrapper .button-form {

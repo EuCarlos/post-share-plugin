@@ -50,11 +50,11 @@
                     </select>
                 </form>
                 <div class="result-wrapper-form">
-                    <p>o código abaixo e cole dentro do HTML do seu site para implantar o <i>plugin</i> automaticamente</p>
+                    <p>Copie o código abaixo e cole dentro do HTML do seu site para implantar o <i>plugin</i> automaticamente</p>
                     <div class="textarea-result-wrapper">
-                        <textarea name="result-form" id="result-form"></textarea>
+                        <div name="result-form" id="result-form" contentEditable="true"></div>
                         <div class="button-form">
-                            <button>Copiar para área de Trabalho</button>
+                            <button onclick="copyTextToClipboard()">Copiar para área de Trabalho</button>
                         </div>
                     </div>
                 </div>
@@ -70,6 +70,7 @@
         </footer>
         
     <script
+        data-id="bin"
         src="./src/post-share-plugin.js" 
         theme="light"
         lang="pt_br"
