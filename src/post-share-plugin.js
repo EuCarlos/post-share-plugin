@@ -186,10 +186,10 @@ styles.innerHTML = `
 #plugin-container-wrapper[data-theme="light"] #content-share-plugin a:hover > svg path { fill: #fff; }
 
 /* Dark mode - default */
-#plugin-container-wrapper[data-theme="dark"] #content-share-plugin { background: #f2eeee; border: solid 1px #c4acac; }
-#plugin-container-wrapper[data-theme="dark"] #content-share-plugin h1 { color: #5b4a4a; }
-#plugin-container-wrapper[data-theme="dark"] #content-share-plugin #share-icon a { background: #d9d4d4; color: #5b4a4a; }
-#plugin-container-wrapper[data-theme="dark"] #content-share-plugin svg path { fill: #5b4a4a; }
+#plugin-container-wrapper[data-theme="dark"] #content-share-plugin { background: #121212; border: solid 1px #1e1e1e; }
+#plugin-container-wrapper[data-theme="dark"] #content-share-plugin h1 { color: #f2f2f2; }
+#plugin-container-wrapper[data-theme="dark"] #content-share-plugin #share-icon a { background: #1e1e1e; color: #f2f2f2; }
+#plugin-container-wrapper[data-theme="dark"] #content-share-plugin svg path { fill: #d96a6a; }
 #plugin-container-wrapper[data-theme="dark"] #content-share-plugin a:hover > svg path { fill: #fff; }
 
 /* Light mode - cream */
