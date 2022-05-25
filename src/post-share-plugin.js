@@ -212,6 +212,13 @@ styles.innerHTML = `
 #plugin-container-wrapper[data-theme="light-sakura"] #content-share-plugin #share-icon a { background: #A2D2FF; color: #fff; }
 #plugin-container-wrapper[data-theme="light-sakura"] #content-share-plugin svg path { fill: #fff; }
 #plugin-container-wrapper[data-theme="light-sakura"] #content-share-plugin a:hover > svg path { fill: #fff; }
+
+/* Dark mode - AdventureTime */
+#plugin-container-wrapper[data-theme="adventure-time"] #content-share-plugin { background: #1f1d45; border: solid 1px #4ab118; }
+#plugin-container-wrapper[data-theme="adventure-time"] #content-share-plugin h1 { color: #f8dcc0; }
+#plugin-container-wrapper[data-theme="adventure-time"] #content-share-plugin #share-icon a { background: #4ab118; color: #5b4a4a; }
+#plugin-container-wrapper[data-theme="adventure-time"] #content-share-plugin svg path { fill: #f8dcc0; }
+#plugin-container-wrapper[data-theme="adventure-time"] #content-share-plugin a:hover > svg path { fill: #fff; }
 `
 document.head.appendChild(styles)
 document.body.appendChild(share_plugin)
